@@ -21,3 +21,6 @@ Route::get('/', function () {
 Route::get('create-person',[PersonController::class, 'create']);
 Route::post('store-person',[PersonController::class, 'store']);
 Route::get('persons',[PersonController::class, 'all']);
+Route::get('edit-person/{pid}',[PersonController::class, 'edit']);
+Route::post('update-person/{pid}',[PersonController::class, 'update']);
+Route::get('delete-person/{pid}',[PersonController::class, 'delete']);
